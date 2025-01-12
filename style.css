@@ -41,7 +41,8 @@ header {
     display: flex;
     justify-content: center;
     justify-content: space-evenly;
-    padding: 0 50px;
+    border: solid 1px black;
+    padding: 50px;
 }
 
 #header-left {
@@ -50,6 +51,7 @@ header {
     justify-content: center;
     margin: 0 2vw;
     gap: 30px;
+    font-size: 1.3em;
 }
 
 #skill-container {
@@ -60,6 +62,11 @@ header {
 .skill {
     display: flex;
     flex-direction: column;
+    transition: transform 0.1s ease-in-out;
+}
+
+.skill:hover {
+    transform: scale(1.2);
 }
 
 .skill img {
@@ -73,7 +80,6 @@ header {
 }
 
 #motto {
-    font-size: 1.3em;
     max-width: 600px;
 }
 
@@ -88,14 +94,19 @@ header {
     display: flex;
     justify-content: center;
     justify-content: space-evenly;
-    padding: 100px;
-    border: solid 2px black;
-    margin: 50px 0;
+    padding: 50px;
+    margin: 6vh 10vw;
+    border-radius: 50px;
 }
 
 .type {
     display: flex;
     flex-direction: column;
+    transition: transform 0.1s ease-in-out;
+}
+
+.type:hover {
+  transform: scale(1.2);
 }
 
 .type img {
@@ -105,12 +116,82 @@ header {
     border-radius: 10px;
     padding: 20px;
     width: 50px;
-    background-color: antiquewhite;
+    background-color: white;
+    box-shadow: 0px 0px 3px;
 }
 
 .type p {
     text-align: center;
-    margin: 10px 0;
+}
+
+#sample-text {
+    font-size: 2em;
+}
+
+
+#project-section {
+    display: flex;
+}
+
+#project-container {
+    width: 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    margin: 0 50px;
+}
+
+.project {
+    transition: transform 0.1s ease-in-out;
+}
+
+.project:hover {
+  transform: scale(1.2);
+}
+
+.project img {
+    height: 50px;
+    border: solid 2px black;
+    border-radius: 10px;
+    padding: 20px;
+    width: 50px;
+    background-color: white;
+    box-shadow: 0px 0px 3px;
+    object-fit: fill;
+}
+
+.project p {
+    text-align: center;
+}
+
+#project-img {
+    width: 70vw;
+    border-radius: 10px;
+    height: auto;
+}
+
+
+@media only screen and (max-width: 1000px) {
+    header {
+        padding: 0 20px;
+    }
+
+    #header-left {
+        margin: 0 1vw;
+    }
+
+    #skill-container {
+        gap: 20px;
+    }
+
+    #type-container {
+        margin: 3vw;
+    }
+
+    #motto {
+        width: 450px;
+    }
 }
 
 @media only screen and (max-width: 600px) {

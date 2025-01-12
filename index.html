@@ -16,6 +16,7 @@
 
     <header>
         <div id="header-left">
+            <h1>Your Web Developer</h1>
             <div id="skill-container">
                 <div class="skill">
                     <img src="src/icons/html-icon.svg">
@@ -72,9 +73,42 @@
             </div>
         </div>
 
-        <div id="projects-container">
-            <h2>Example Projects</h2>
+        <div id="project-section">
+            <div id="project-container">
+                <div class="project">
+                    <a href="https://mirrorinstinct.github.io/shorten-url/" target="_blank">
+                        <img onmouseover="projectDisplay('src/images/url.png')",
+                        src="src/images/url.png">
+                    </a>
+                    <p>Shorten URL</p>
+                </div>
+                <div class="project">
+                    <a href="https://mirrorinstinct.github.io/news-homepage/" target="_blank">
+                        <img onmouseover="projectDisplay('src/images/news.png')" src="src/images/news.png">
+                    </a>
+                    <p>News Page</p>
+                </div>
+                <div class="project">
+                    <a href="https://mirrorinstinct.github.io/daima-landing-page/" target="_blank">
+                        <img onmouseover="projectDisplay('src/images/daima.png')" src="src/images/daima.png">
+                    </a>
+                    <p>DB Daima</p>
+                </div>
+                <div class="project">
+                    <a href="https://mirrorinstinct.github.io/experience-lyoko/" target="_blank">
+                        <img onmouseover="projectDisplay('src/images/lyoko.png')" src="src/images/lyoko.png">
+                    </a>
+                    <p>Lyoko</p>
+                </div>
+            </div>
+
+            <div id="display">
+                <p id="sample-text">Sample Projects</p>
+                <img id="project-img">
+            </div>
         </div>
+
+
     </main>
 
     <footer>
@@ -102,5 +136,13 @@
             <p>Upwork Profile</p>
         </div>
     </footer>
+
+    <script>
+        let projectImage = document.getElementById('project-img');
+
+        function projectDisplay(imagePath) {
+            projectImage.src= imagePath;
+        }
+    </script>
 </body>
 </html>
