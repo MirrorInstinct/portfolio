@@ -12,16 +12,21 @@ body {
     font-family: RethinkSans, sans-serif;
 }
 
+nav {
+    background-color: rgb(230, 177, 64);
+}
+
 .navbar {
     display: flex;
     justify-content: space-between;
-    margin: 30px 70px;
+    padding: 30px 70px;
     font-size: 1.3em;
 }
 
 .logo {
     color: black;
     text-decoration: none;
+    font-size: 1em;
 }
 
 .nav-links {
@@ -41,7 +46,7 @@ header {
     display: flex;
     justify-content: center;
     justify-content: space-evenly;
-    padding: 50px;
+    padding: 70px;
 }
 
 #header-left {
@@ -87,6 +92,11 @@ header {
     border-radius: 30px;
 
     box-shadow: 5px 5px;
+}
+
+main {
+    background-color: rgb(235, 235, 235);
+    padding-bottom: 50px;
 }
 
 #type-container {
@@ -207,6 +217,7 @@ footer p {
 
 #contact a {
     padding: 10px 20px;
+    margin: 10px;
     border-radius: 10px;
     background-color: blue;
     color: white;
@@ -220,7 +231,13 @@ footer p {
     justify-content: space-evenly;
     background-color: black;
     color: white;
-    padding: 20px;
+    padding: 30px;
+    font-size: 1.3em;
+}
+
+#bottom-page a {
+    color: white;
+    text-decoration: none;
 }
 
 @media only screen and (max-width: 1000px) {
@@ -247,7 +264,7 @@ footer p {
 
 @media only screen and (max-width: 600px) {
     .logo {
-        margin-bottom: 10px;
+        margin-bottom: 20px;
     }
     
     .navbar {
@@ -258,5 +275,22 @@ footer p {
     .nav-links {
         justify-content: center;
 
+    }
+
+    header {
+        flex-direction: column-reverse;
+        align-items: center;
+        margin: 30px 0;
+    }
+
+    #header-left h1{
+        text-align: center;
+        margin: 20px 0;
+    }
+
+    
+    #type-container {
+        margin: 0;
+        padding: 20px 0;
     }
 }
