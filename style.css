@@ -286,11 +286,60 @@ footer p {
     #header-left h1{
         text-align: center;
         margin: 20px 0;
+        font-size: 1.4em;
+    }
+    
+    #skill-container {
+        flex-direction: column;
     }
 
-    
+    #motto {
+        width: 300px;
+        text-align: center;
+    }
+
+        
     #type-container {
         margin: 0;
         padding: 20px 0;
+        flex-wrap: wrap;
+    }
+
+    .type p {
+        padding: 10px 0;
+    }
+
+    #project-container {
+        width: 100%;
+    }
+
+    #project-section {
+        flex-direction: column-reverse;
+        padding: 30px;
+        margin: 0;
+        align-items: center;
+    }
+
+    .project {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #display {
+        margin-bottom: 20px;
+    }
+
+    #contact-container {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+
+    #about {    
+        width: 90%
+    }
+
+    #contact {
+        width: 80%;
     }
 }
